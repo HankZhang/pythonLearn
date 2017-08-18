@@ -74,14 +74,26 @@ WSGI_APPLICATION = 'StockManager.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'flask_test',
+        'NAME': 'django_test',
         'USER': 'root',
-        'PASSWORD': '924',
+        'PASSWORD': 'asdf123',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'CHARSET': 'utf8'
+    },
+
+    'guess':{
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bbwei',
+        'USER': 'root',
+        'PASSWORD': 'asdf123',
         'HOST': 'localhost',
         'PORT': '3306',
         'CHARSET': 'utf8'
     }
 }
+
+DATABASE_ROUTERS = ['myadmin.db_router.appRouter']
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
