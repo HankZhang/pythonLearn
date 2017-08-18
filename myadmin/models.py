@@ -10,7 +10,7 @@ class Good(models.Model):
     goodName = models.CharField(max_length=20,verbose_name="商品名",name="good_name")
     goodPrice = models.FloatField(max_length=30,verbose_name="售价",name="good_price")
     goodPurchasePrice = models.FloatField(max_length=1000,verbose_name="进货价",name="good_purchase_price")
-    goodThumb = models.URLField(max_length=50,verbose_name="图片",name="good_thumb")
+    goodThumb = models.ImageField(verbose_name="图片",name="good_thumb",upload_to="goodthumb")
 
     class Meta:
         verbose_name_plural="商品"
