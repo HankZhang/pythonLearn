@@ -2,8 +2,13 @@
 from __future__ import unicode_literals
 
 from django.db import models
+import sys
 
 # Create your models here.
+
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Good(models.Model):
     id = models.IntegerField(primary_key=True,auto_created=True,verbose_name="ID",name="id",editable=False)

@@ -24,7 +24,7 @@ SECRET_KEY = 'i-2&m7^ebs(s=_n+e8r0j-2mh-b))q(+$ui-ntnt^d)vrnq@6+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -75,18 +75,28 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_test',
-        'USER': 'root',
-        'PASSWORD': 'asdf123',
+        'USER': 'archer',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '3306',
         'CHARSET': 'utf8'
     },
 
-    'guess':{
+    # 'guess':{
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'bbwei',
+    #     'USER': 'root',
+    #     'PASSWORD': 'asdf123',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    #     'CHARSET': 'utf8'
+    # }
+
+    'guess': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bbwei',
-        'USER': 'root',
-        'PASSWORD': 'asdf123',
+        'USER': 'archer',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '3306',
         'CHARSET': 'utf8'
